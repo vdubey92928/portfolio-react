@@ -1,0 +1,214 @@
+.bg-voilet {
+  background-color: #8724f8;
+  color: white;
+}
+
+.bg-lightpink {
+  background-color: #f6ebfe;
+}
+
+.bg-lightgray {
+  background-color: rgb(242, 239, 239);
+}
+
+.font-icon {
+  color: #8724f8;
+  font-size: 70px;
+}
+
+
+
+.h-left-border {
+  border-left: 5px solid transparent;
+}
+
+.h-left-border:hover {
+  border-left: 5px solid #8724f8;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in;
+}
+
+.h-underline:hover {
+  text-decoration: underline;
+}
+
+::placeholder {
+  font-size: 1.3rem;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  /* height of navbar */
+}
+
+.hover {
+  transition:
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s ease;
+  will-change: transform;
+}
+
+.hover:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.process-card {
+  border-radius: 14px;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-radius 0.35s ease;
+  cursor: pointer;
+}
+
+.process-card:hover {
+  transform: translateY(-10px) scale(1.06);
+  border-radius: 22px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* ICON ANIMATION */
+.process-card .font-icon i {
+  transition:
+    transform 0.35s ease,
+    background-color 0.35s ease,
+    color 0.35s ease;
+  border-radius: 50%;
+}
+
+.process-card:hover .font-icon i {
+  transform: scale(1.2) rotate(5deg);
+  color: #8724f8;
+}
+
+
+/* ===== Portfolio Section ===== */
+
+.portfolio-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: "";
+  width: 60%;
+  height: 4px;
+  background-color: #8724f8;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== Portfolio Card ===== */
+
+.portfolio-card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.18);
+}
+
+/* Image zoom on hover */
+.portfolio-img-wrapper {
+  overflow: hidden;
+}
+
+.portfolio-img-wrapper img {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-img-wrapper img {
+  transform: scale(1.1);
+}
+
+/* Tech stack text */
+.portfolio-tech {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #8724f8;
+  letter-spacing: 0.5px;
+}
+
+/* Button hover */
+.portfolio-card .btn-outline-primary {
+  transition: all 0.3s ease;
+}
+
+.portfolio-card .btn-outline-primary:hover {
+  background-color: #8724f8;
+  color: #fff;
+  border-color: #8724f8;
+}
+
+/* Hide View More by default */
+.view-more-btn {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Show button on card hover */
+.portfolio-card:hover .view-more-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+/* ===== Project Detail Modal ===== */
+
+.project-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.project-modal {
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  max-height: 85vh;
+  overflow-y: auto;
+  border-radius: 18px;
+  padding: 30px;
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.border-bottom {
+  border: 0px solid;
+  border-bottom: 1px solid #8724f8;
+}
