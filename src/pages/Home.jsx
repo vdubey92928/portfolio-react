@@ -74,7 +74,7 @@ const Home = () => {
                             <div className="row align-items-center">
 
                                 <div className="col-sm-6 text-responsive">
-                                    <h1 className="my-2">
+                                    <h1 className="my-2 title">
                                         Hi! I’m Vivekanand Dubey
                                     </h1>
 
@@ -130,7 +130,7 @@ const Home = () => {
                                         and intuitive user interfaces.
                                     </p>
 
-                                    <p className="pt-1 text-justify">
+                                    <p className="pt-1">
                                         On the frontend, I work with React, Bootstrap, and HTML to create
                                         mobile-friendly layouts. On the backend, I specialize in Spring Boot,
                                         role-based authentication, database design, and real-world business logic
@@ -185,7 +185,7 @@ const Home = () => {
                                                     Step {i + 1}
                                                 </span>
                                                 <h4 className="mt-2 fw-bold">{step.title}</h4>
-                                                <p className="text-secondary  mt-3">
+                                                <p className="text-secondary  mt-3  text-responsive">
                                                     {step.desc}
                                                 </p>
                                             </div>
@@ -262,7 +262,7 @@ const Home = () => {
                                 I'm always open to discussing new projects and creative ideas.
                                 Let's connect and build something amazing together.
                             </p>
-                            <a href="#" className="btn btn-primary p-3 w-25 mt-5">
+                            <a href="#" className="btn btn-primary  w-50 rounded-pill mt-5">
                                 Let's Work Together
                             </a>
                         </div>
