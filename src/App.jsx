@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // NEW PAGE
 import Project from "./pages/Project";

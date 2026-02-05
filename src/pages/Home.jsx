@@ -66,19 +66,19 @@ const projects = [
 const Home = () => {
     return (
         <>
-            <div className="container-fluid p-0">
+            <div className="container-fluid p-0 px-4">
 
                 <section id="home" className="scroll-section">
                     <div className="row my-5 pt-5" id="home">
                         <div className="col-sm-10 mx-auto">
                             <div className="row align-items-center">
 
-                                <div className="col-sm-6">
+                                <div className="col-sm-6 text-responsive">
                                     <h1 className="my-2">
                                         Hi! I’m Vivekanand Dubey
                                     </h1>
 
-                                    <p className="my-3 fs-5">
+                                    <p className="my-3 fs-5 ">
                                         A <strong>Java Full-Stack Developer</strong> specializing in
                                         <strong> Spring Boot</strong> on the backend and
                                         <strong> React</strong>, <strong>Bootstrap</strong>, and
@@ -91,9 +91,11 @@ const Home = () => {
                                         systems using Java, REST principles, and relational databases.
                                     </p>
 
-                                    <button className="bg-voilet p-3 rounded-2 border-0 mt-3">
-                                        Let’s Build Something
-                                    </button>
+                                    <div className='text-center'>
+                                        <button className="bg-voilet p-3 rounded-2 border-0 my-3 ">
+                                            Let’s Build Something
+                                        </button>
+                                    </div>
                                 </div>
 
                                 <div className="col-sm-5 mx-auto">
@@ -111,7 +113,7 @@ const Home = () => {
                     </div>
                 </section>
 
-                <section id="about" className="scroll-section">
+                <section id="about" className="scroll-section text-justify">
                     <div className="row bg-lightgray rounded-4 py-5 my-5">
                         <div className="col-sm-10 mx-auto py-5">
                             <div className="row py-5 align-items-center text-center">
@@ -121,14 +123,14 @@ const Home = () => {
                                         I am a Java Full-Stack Developer
                                     </h1>
 
-                                    <p className="pt-3">
+                                    <p className="pt-3 text-responsive">
                                         I design and build scalable, secure, and user-friendly web applications
                                         using Java, Spring Boot, and modern frontend technologies.
                                         My focus is on writing clean backend logic while delivering responsive
                                         and intuitive user interfaces.
                                     </p>
 
-                                    <p className="pt-1">
+                                    <p className="pt-1 text-justify">
                                         On the frontend, I work with React, Bootstrap, and HTML to create
                                         mobile-friendly layouts. On the backend, I specialize in Spring Boot,
                                         role-based authentication, database design, and real-world business logic
@@ -159,8 +161,8 @@ const Home = () => {
 
                             {/* SECTION HEADER */}
                             <div className="row mb-5">
-                                <div className="col-md-6">
-                                    <h1 className="fw-bold title">My Work Process</h1>
+                                <div className="col-md-6 text-center">
+                                    <h1 className="fw-bold title ">My Work Process</h1>
                                     <p className="text-muted fs-5">
                                         A structured and practical approach that helps me deliver
                                         scalable, reliable, and user-friendly web applications.
@@ -183,7 +185,7 @@ const Home = () => {
                                                     Step {i + 1}
                                                 </span>
                                                 <h4 className="mt-2 fw-bold">{step.title}</h4>
-                                                <p className="text-secondary mt-3">
+                                                <p className="text-secondary  mt-3">
                                                     {step.desc}
                                                 </p>
                                             </div>
@@ -220,7 +222,7 @@ const Home = () => {
                                                 />
                                             </div>
 
-                                            <div className="card-body d-flex flex-column text-start">
+                                            <div className="card-body d-flex flex-column text-center">
                                                 <h5 className="fw-bold">{project.title}</h5>
 
                                                 <p className="text-secondary small mt-2">

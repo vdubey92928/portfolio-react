@@ -212,3 +212,8 @@ html {
   border: 0px solid;
   border-bottom: 1px solid #8724f8;
 }
+
+.text-responsive {
+  text-align: justify;
+  line-height: 1.8;
+}
