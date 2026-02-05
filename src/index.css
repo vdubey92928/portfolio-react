@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid;
+}
+
 .bg-voilet {
   background-color: #8724f8;
   color: white;

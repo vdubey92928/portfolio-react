@@ -61,7 +61,7 @@ export default function Contact() {
                                 </div>
 
                                 <div className="col-5 mx-auto text-center mt-5">
-                                    <button className="bg-voilet rounded-pill w-50 p-3 border-0">
+                                    <button className="bg-voilet rounded-pill w-100 p-3 border-0">
                                         Submit <i className="bi bi-send ms-1"></i>
                                     </button>
                                 </div>

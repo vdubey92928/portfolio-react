@@ -14,16 +14,22 @@ import Resume from "./pages/Resume";
 function App() {
   return (
     <>
-      <Navbar />
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-sm-12">
+            <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/project/:id" element={<Project />} />
-        <Route path="/resume" element={<Resume />} />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/project/:id" element={<Project />} />
+              <Route path="/resume" element={<Resume />} />
 
-      </Routes>
+            </Routes>
 
-      <Footer />
+            <Footer />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

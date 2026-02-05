@@ -69,7 +69,7 @@ const Home = () => {
             <div className="container-fluid p-0 px-4">
 
                 <section id="home" className="scroll-section">
-                    <div className="row my-5 pt-5" id="home">
+                    <div className="row mb-5 pt-5" id="home">
                         <div className="col-sm-10 mx-auto">
                             <div className="row align-items-center">
 
