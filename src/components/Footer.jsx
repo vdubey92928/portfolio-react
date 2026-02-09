@@ -2,35 +2,61 @@ import logo from "../assets/img/nav-voilet-logo.png";
 
 export default function Footer() {
     return (
-        <div className="row bg-voilet py-5 text-white">
-            <div className="col-sm-10 mx-auto my-5">
-                <div className="row text-center">
+        <footer className="bg-voilet text-white pt-5 pb-1">
+            <div className="container text-center">
 
-                    <div className="col-sm-4">
-                        <img src={logo} alt="Logo" />
-                    </div>
+                {/* Logo */}
+                <img src={logo} alt="logo" style={{ width: "120px" }} />
 
-                    <div className="col-sm-4">
-                        <ul className="list-unstyled d-flex justify-content-center flex-wrap">
-                            {["Home", "About", "Process", "Portfolio", "Blog", "Service", "Contact"].map(
-                                (i, idx) => (
-                                    <li key={idx} className="mx-2">
-                                        <a href="#" className="nav-link text-white h-underline">
-                                            {i}
-                                        </a>
-                                    </li>
-                                )
-                            )}
-                        </ul>
-                        <p className="pt-3">Developed by Vivekanand Dubey</p>
-                    </div>
+                {/* Name / Tagline */}
+                <h5 className="mt-3">Vivekanand Dubey</h5>
+                <p className=" mb-3">
+                    Java Backend Developer • Spring Boot • REST APIs • React Developer
+                </p>
 
-                    <div className="col-sm-4">
-                        <p>Copyright © 2025.</p>
-                    </div>
+                {/* Social Icons */}
+                <div className="d-flex justify-content-center gap-4 fs-3 mb-4">
+                    <a
+                        href="https://github.com/vdubey92928"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white"
+                    >
+                        <i className="bi bi-github"></i>
+                    </a>
 
+                    <a
+                        href="https://www.linkedin.com/in/vivekanand-dubey-vd123754"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white"
+                    >
+                        <i className="bi bi-linkedin"></i>
+                    </a>
+
+                    <a
+                        href="mailto:vivekananddubey877@gmail.com"
+                        className="text-white"
+                    >
+                        <i className="bi bi-envelope-fill"></i>
+                    </a>
+
+                    <a
+                        href="https://www.vivekananddubey.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white"
+                    >
+                        <i className="bi bi-globe"></i>
+                    </a>
                 </div>
+
+                {/* Bottom Line */}
+                <small>
+                    © {new Date().getFullYear()} Vivekanand Dubey • All Rights Reserved
+                </small>
+
             </div>
-        </div>
+        </footer>
     );
 }

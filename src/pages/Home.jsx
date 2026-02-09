@@ -1,4 +1,5 @@
 import React from 'react'
+import usePageTitle from "../hooks/usePageTitle";
 
 
 import Contact from '../components/Contact'
@@ -38,7 +39,7 @@ const steps = [
 
 const projects = [
     {
-        id: "qr-ticket",
+        id: "Qr-Ticket-Application",
         title: "QR Ticket & Entry Validation System",
         desc:
             "QR-based ticketing system with real-time entry validation and role-based access control.",
@@ -46,7 +47,7 @@ const projects = [
         img: qr
     },
     {
-        id: "lms",
+        id: "LMS",
         title: "LMS – NOU e-Gyan Portal",
         desc:
             "Learning Management System using Spring Boot MVC with role-based authentication.",
@@ -54,7 +55,7 @@ const projects = [
         img: nou
     },
     {
-        id: "agritradehub",
+        id: "AgriTradeHub",
         title: "AgriTradeHub – Farmer to Buyer Platform",
         desc:
             "Platform connecting farmers directly with buyers for seamless product trading.",
@@ -64,6 +65,7 @@ const projects = [
 ];
 
 const Home = () => {
+    usePageTitle("Java Backend Developer | Vivekanand Dubey");
     return (
         <>
             <div className="container-fluid p-0 px-4">

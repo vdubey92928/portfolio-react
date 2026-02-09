@@ -93,7 +93,7 @@ export default function Navbar() {
                             {navItems.map((item) => (
                                 <li
                                     key={item.id}
-                                    className={`nav-item mx-2 p-1 rounded-2 ${active === item.id ? "bg-voilet" : ""
+                                    className={`nav-item mx-2 rounded-2 ${active === item.id ? "bg-voilet" : ""
                                         }`}
                                 >
                                     <button

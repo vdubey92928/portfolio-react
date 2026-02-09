@@ -1,6 +1,9 @@
 import resumePdf from "../assets/resume/Vivekanand_Dubey_FullStackDev.pdf";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Resume = () => {
+    usePageTitle("Resume | Vivekanand Dubey");
+
     return (
         <div className="container py-5">
             <h1 className="fw-bold mb-4">My Resume</h1>

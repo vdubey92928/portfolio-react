@@ -1,9 +1,10 @@
 import { useParams, Link } from "react-router-dom";
+import usePageTitle from "../hooks/usePageTitle";
 
 
 const projectData = [
     {
-        id: "qr-ticket",
+        id: "Qr-Ticket-Application",
         git: "https://github.com/vdubey92928/qr-ticket-application",
         title: "QR Ticket & Entry Validation System (Rastriya Prerna Sthal)",
         desc:
@@ -17,7 +18,7 @@ const projectData = [
         ]
     },
     {
-        id: "lms",
+        id: "LMS",
         git: "https://github.com/vdubey92928/nouapp",
         title: "LMS – NOU e-Gyan Portal",
         desc:
@@ -31,7 +32,7 @@ const projectData = [
         ]
     },
     {
-        id: "agritradehub",
+        id: "AgriTradeHub",
         git: "https://github.com/vdubey92928/AgriTradeHub",
         title: "AgriTradeHub – Farmer to Buyer Platform",
         desc:
@@ -49,6 +50,9 @@ const projectData = [
 
 export default function Project() {
     const { id } = useParams();
+
+    usePageTitle(`Project ${id} | Vivekanand Dubey`);
+
     const project = projectData.find((p) => p.id === id);
 
     if (!project) {
@@ -68,7 +72,7 @@ export default function Project() {
 
 
             <h1 className="fw-bold text-center my-5 title">{project.title}</h1>
-            <p className="text-muted fs-5 mt-2">{project.desc}</p>
+            <p className="text-justify fs-5 mt-2">{project.desc}</p>
 
             <p className="fw-semibold mt-3">
                 Tech Stack: <span className="text-primary">{project.tech}</span>

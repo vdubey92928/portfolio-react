@@ -13,22 +13,33 @@ export default function Contact() {
                         </p>
 
                         <ContactItem icon="geo-alt" label="Address" value="Lucknow, India" />
-                        <ContactItem icon="envelope" label="My Email" value="vd123754@mail.com" />
+                        <ContactItem icon="envelope" label="My Email" value="vivekananddubey877@gmail.com" />
                         <ContactItem icon="telephone" label="Call Me Now" value="+91 7706892928" />
 
-                        <div className="d-flex">
-                            {["facebook", "instagram", "linkedin", "twitter-x", "youtube"].map(
-                                (i, idx) => (
-                                    <a
-                                        key={idx}
-                                        href="#"
-                                        className="btn btn-outline-secondary mx-2 btn-sm rounded-circle"
-                                    >
-                                        <i className={`bi bi-${i}`}></i>
-                                    </a>
-                                )
-                            )}
+                        <div className="d-flex gap-3 fs-4">
+
+                            {/* GitHub */}
+                            <a
+                                href="https://github.com/vdubey92928"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-dark"
+                            >
+                                <i className="bi bi-github"></i>
+                            </a>
+
+                            {/* LinkedIn */}
+                            <a
+                                href="https://www.linkedin.com/in/vivekanand-dubey-vd123754"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-primary"
+                            >
+                                <i className="bi bi-linkedin"></i>
+                            </a>
+
                         </div>
+
                     </div>
 
                     {/* RIGHT */}
