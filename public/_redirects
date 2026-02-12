@@ -1,3 +1,4 @@
-http://vivekananddubey.com/* https://www.vivekananddubey.com/:splat 301!
-https://vivekananddubey.com/* https://www.vivekananddubey.com/:splat 301!
-/*    /index.html   200
+
+https://vivekananddubey.com/*  https://www.vivekananddubey.com/:splat 301!
+
+/*  /index.html 200
