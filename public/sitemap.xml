@@ -1,17 +1,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://www.vivekananddubey.com/</loc>
   </url>
+
   <url>
     <loc>https://www.vivekananddubey.com/resume</loc>
   </url>
+
   <url>
-    <loc>https://vivekananddubey.com/project/Qr-Ticket-Application</loc>
+    <loc>https://www.vivekananddubey.com/project/Qr-Ticket-Application</loc>
   </url>
+
   <url>
-    <loc>https://vivekananddubey.com/project/LMS</loc>
+    <loc>https://www.vivekananddubey.com/project/LMS</loc>
   </url>
+
   <url>
-    <loc>https://vivekananddubey.com/project/AgriTradeHub</loc>
+    <loc>https://www.vivekananddubey.com/project/AgriTradeHub</loc>
   </url>
+
 </urlset>
