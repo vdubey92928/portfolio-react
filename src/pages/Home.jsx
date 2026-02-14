@@ -69,7 +69,6 @@ const Home = () => {
     return (
         <>
             <div className="container-fluid p-0 px-4">
-
                 <section id="home" className="scroll-section">
                     <div className="row mb-5 pt-5" id="home">
                         <div className="col-sm-10 mx-auto">
@@ -248,24 +247,22 @@ const Home = () => {
                                 ))}
                             </div>
 
-                            <button className="btn btn-primary mt-5 px-5 py-2 rounded-pill">
-                                View More Projects
-                            </button>
+
                         </div>
                     </div>
                 </section>
 
                 <section id="cta" className="scroll-section">
                     <div className="row py-2 text-white text-center bg-dark">
-                        <div className="col-sm-12 mx-auto py-5 my-5">
+                        <div className="col-sm-12 mx-auto pb-4 my-5">
                             <h1>Do you have a Project Idea?</h1>
                             <h1 className="mb-4">Let’s discuss your project.</h1>
                             <p>
                                 I'm always open to discussing new projects and creative ideas.
                                 Let's connect and build something amazing together.
                             </p>
-                            <a href="#" className="btn btn-primary  w-50 rounded-pill mt-5">
-                                Let's Work Together
+                            <a href="https://www.linkedin.com/in/vivekanand-dubey-vd123754/" className="btn btn-primary  w-25 rounded-pill mt-5">
+                                Let's Connect
                             </a>
                         </div>
                     </div>
