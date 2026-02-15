@@ -1,6 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import usePageTitle from "../hooks/usePageTitle";
-
+import useSEO from "../hooks/useSEO";
 
 const projectData = [
     {
@@ -44,22 +43,28 @@ const projectData = [
             "Simple and accessible user interface",
             "Backend-driven product and order logic"
         ]
-
     }
 ];
 
 export default function Project() {
     const { id } = useParams();
 
-    usePageTitle(`Project ${id} | Vivekanand Dubey`);
 
     const project = projectData.find((p) => p.id === id);
+
+    if (project) {
+        useSEO({
+            title: `${project.title} | Vivekanand Dubey`,
+            description: project.desc.slice(0, 150),
+            canonical: `https://www.vivekananddubey.com/projects/${project.id}`,
+        });
+    }
 
     if (!project) {
         return (
             <div className="container py-5 text-center">
                 <h2>Project not found</h2>
-                <Link to="/" className="btn btn-primary mt-3">
+                <Link to="/" className="btn contact-send-btn mt-3">
                     Back to Home
                 </Link>
             </div>
@@ -69,39 +74,34 @@ export default function Project() {
     return (
         <div className="container py-5">
 
-
-
             <h1 className="fw-bold text-center my-5 title">{project.title}</h1>
-            <p className="text-justify fs-5 mt-2">{project.desc}</p>
 
-            <p className="fw-semibold mt-3">
-                Tech Stack: <span className="text-primary">{project.tech}</span>
+            <p className="fs-5 mt-2 project-desc">{project.desc}</p>
+
+            <p className="fw-semibold mt-4">
+                Tech Stack:
+                <span className="project-tech ms-2">{project.tech}</span>
             </p>
 
-            <p className="fw-semibold mt-3">
-                {project.git && (
-                    <span className="text-primary">
-                        <a
-                            href={project.git}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-decoration-none fw-semibold"
-                        >
-                            🔗 View on GitHub
-                        </a>
-                    </span>
-                )}
-
-            </p>
+            {project.git && (
+                <p className="fw-semibold mt-3">
+                    <a
+                        href={project.git}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-github-link text-decoration-none"
+                    >
+                        🔗 View on GitHub
+                    </a>
+                </p>
+            )}
 
             <h4 className="mt-4">Key Features</h4>
-            <ul>
+            <ul className="project-features">
                 {project.features.map((f, i) => (
                     <li key={i}>{f}</li>
                 ))}
             </ul>
-
-
 
         </div>
     );

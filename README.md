@@ -1,17 +1,133 @@
-# React + Vite
+# 💼 Personal Portfolio – Vivekanand Dubey
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive developer portfolio built using **React + Bootstrap** to showcase projects, skills, resume, and contact information with a clean UI and smooth **Light/Dark Theme** support.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Website
 
-## React Compiler
+**https://www.vivekananddubey.com**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# portfolio-react" 
+* 🌗 Light / Dark theme with smooth transition
+* 📱 Fully responsive (mobile-first design)
+* ⚡ Fast React Single Page Application
+* 🧭 Smooth scrolling navigation
+* 📂 Dedicated Projects page + Individual Project Case Study pages
+* 📄 Resume preview + download option
+* 📬 Contact modal with modern UI
+* 🎨 Brand-themed UI using CSS variables
+* 💾 Theme preference saved in localStorage
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* React Router
+* Bootstrap 5
+* Bootstrap Icons
+* CSS (Custom + CSS Variables)
+
+### Tooling & Deployment
+
+* Vite
+* Git & GitHub
+* Vercel Hosting
+
+---
+
+## 📂 Folder Structure
+
+```
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── PortfolioSection.jsx
+│   └── ContactSection.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── Projects.jsx
+│   ├── ProjectDetails.jsx
+│   ├── Resume.jsx
+│
+├── hooks/
+│   ├── useTheme.js
+│   └── usePageTitle.js
+│
+├── assets/
+│   ├── img/
+│   └── resume/
+```
+
+---
+
+## 🧭 Application Pages
+
+| Page            | Route          | Description                   |
+| --------------- | -------------- | ----------------------------- |
+| Home            | `/`            | Main landing page             |
+| Projects        | `/project`     | All projects grid             |
+| Project Details | `/project/:id` | Individual project case study |
+| Resume          | `/resume`      | Resume preview & download     |
+
+---
+
+## 🌙 Dark Mode Implementation
+
+Dark mode is implemented using:
+
+* CSS Variables for colors
+* `data-theme="dark"` attribute on `<html>`
+* LocalStorage persistence
+* Global smooth theme transitions
+* Navbar toggle button 🌙
+
+---
+
+## 🚀 Running Locally
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## 📬 Contact
+
+**Vivekanand Dubey**
+Java Backend Developer
+
+* GitHub: https://github.com/vdubey92928
+* LinkedIn: https://www.linkedin.com/in/vivekanand-dubey-vd123754
+* Email: [vivekananddubey877@gmail.com](mailto:vivekananddubey877@gmail.com)
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
+
+---

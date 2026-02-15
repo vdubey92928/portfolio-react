@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Resume from "./pages/Resume";
+import Projects from "./pages/Projects";
 
 
 
@@ -21,6 +22,7 @@ function App() {
 
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
               <Route path="/project/:id" element={<Project />} />
               <Route path="/resume" element={<Resume />} />
 
