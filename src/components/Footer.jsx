@@ -1,16 +1,13 @@
-import logo from "../assets/img/nav-voilet-logo.png";
+
 
 export default function Footer() {
     return (
         <footer className="footer-theme pt-5 pb-2">
             <div className="container text-center">
 
-                {/* Logo */}
-                <img src={logo} alt="logo" className="footer-logo" />
-
                 {/* Name / Tagline */}
                 <h5 className="mt-3 fw-bold">Vivekanand Dubey</h5>
-                <p className="text-muted mb-3">
+                <p className=" mb-3">
                     Java Backend Developer • Spring Boot • REST APIs • React Developer
                 </p>
 
@@ -54,11 +51,11 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Line */}
-                <small className="text-muted">
+                <small>
                     © {new Date().getFullYear()} Vivekanand Dubey • All Rights Reserved
                 </small>
 
             </div>
-        </footer>
+        </footer >
     );
 }

@@ -83,7 +83,7 @@ export default function Navbar() {
                 <nav className="navbar navbar-expand-lg">
 
                     {/* LOGO */}
-                    <img src={logo} className="img-fluid" alt="logo" />
+                    <img src={logo} className="img-fluid text-white" alt="logo" />
 
                     {/* MOBILE TOGGLER */}
                     <button

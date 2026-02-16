@@ -3,7 +3,7 @@ import React from "react";
 export default function ContactSection() {
     return (
         <section id="contact" className="scroll-section">
-            <div className="row py-5 bg-light">
+            <div className="row py-5">
                 <div className="col-sm-10 mx-auto">
                     <div className="row align-items-center">
 
