@@ -15,9 +15,9 @@ import Projects from "./pages/Projects";
 function App() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid overflow-hidden">
         <div className="row">
-          <div className="col-sm-12">
+          <div className="col-sm-12 p-0">
             <Navbar />
 
             <Routes>
