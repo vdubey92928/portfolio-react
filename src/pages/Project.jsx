@@ -48,12 +48,12 @@ const projectData = [
             "Transactional prevention of duplicate or unauthorized entry"
         ],
         screenshots: [
-            { id: "index", label: "Index", img: qr1 },
-            { id: "about", label: "About", img: qr2 },
-            { id: "admin", label: "Product", img: qr3 },
-            { id: "payment", label: "Help", img: qr4 },
-            { id: "ticket", label: "Contact", img: qr5 },
-            { id: "scanner", label: "Contact", img: qr6 },
+            { id: "Home", label: "Home", img: qr1 },
+            { id: "About", label: "About", img: qr2 },
+            { id: "Admin", label: "Admin", img: qr3 },
+            { id: "Payment", label: "Payment", img: qr4 },
+            { id: "Ticket", label: "Ticket", img: qr5 },
+            { id: "Scanner", label: "Scanner", img: qr6 },
         ]
     },
 
@@ -71,12 +71,12 @@ const projectData = [
             "Relational schema optimized for trade management"
         ],
         screenshots: [
-            { id: "Home", label: "Index", img: at1 },
+            { id: "Home", label: "Home", img: at1 },
             { id: "About", label: "About", img: at2 },
-            { id: "Contact", label: "Product", img: at3 },
-            { id: "Service", label: "Help", img: at4 },
-            { id: "Admin Dash", label: "Contact", img: at5 },
-            { id: "Farmer Dash", label: "Contact", img: at6 },
+            { id: "Contact", label: "Contact", img: at3 },
+            { id: "Service", label: "Service", img: at4 },
+            { id: "Admin Dash", label: "Admin Dash", img: at5 },
+            { id: "Farmer Dash", label: "Farmer Dash", img: at6 },
         ]
     },
     {
@@ -93,12 +93,12 @@ const projectData = [
             "MVC-based layered backend architecture"
         ],
         screenshots: [
-            { id: "Home", label: "Index", img: nou1 },
-            { id: "Contact", label: "About", img: nou2 },
-            { id: "Register", label: "Product", img: nou3 },
-            { id: "Login", label: "Product", img: nou4 },
-            { id: "Admin Dash", label: "Help", img: nou5 },
-            { id: "Student Dash", label: "Contact", img: nou6 },
+            { id: "Home", label: "Home", img: nou1 },
+            { id: "Contact", label: "Contact", img: nou2 },
+            { id: "Register", label: "Register", img: nou3 },
+            { id: "Login", label: "Login", img: nou4 },
+            { id: "Admin Dash", label: "Admin Dash", img: nou5 },
+            { id: "Student Dash", label: "Student Dash", img: nou6 },
         ]
     },
     {
@@ -115,12 +115,12 @@ const projectData = [
             "Responsive server-side rendered interface"
         ],
         screenshots: [
-            { id: "Home", label: "Index", img: tb1 },
-            { id: "Product", label: "About", img: tb2 },
-            { id: "Checkout", label: "Product", img: tb3 },
-            { id: "Order", label: "Help", img: tb4 },
-            { id: "Admin Dash", label: "Contact", img: tb5 },
-            { id: "Seller Dash", label: "Contact", img: tb6 },
+            { id: "Home", label: "Home", img: tb1 },
+            { id: "Product", label: "Product", img: tb2 },
+            { id: "Checkout", label: "Checkout", img: tb3 },
+            { id: "Order", label: "Order", img: tb4 },
+            { id: "Admin Dash", label: "Admin Dash", img: tb5 },
+            { id: "Seller Dash", label: "Seller Dash", img: tb6 },
         ]
     }
 ];
