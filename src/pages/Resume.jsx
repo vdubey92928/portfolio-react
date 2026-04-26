@@ -1,4 +1,4 @@
-import resumePdf from "../assets/resume/Vivekanand_Dubey_FullStackDev.pdf";
+import resumePdf from "../assets/resume/VivekanandDubey_JavaDev_Resume.pdf";
 import useSEO from "../hooks/useSEO";
 
 const Resume = () => {

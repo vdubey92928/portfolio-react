@@ -17,7 +17,7 @@ const MainSection = () => {
                             </h1>
 
                             <h2 className="fw-bold hero-subtitle">
-                                Java Backend Developer
+                                Java Developer
                             </h2>
 
                             <p className="my-3 fs-5">
@@ -32,7 +32,7 @@ const MainSection = () => {
 
                             {/* ACTION BUTTONS */}
                             <div className="d-flex gap-3 justify-content-center justify-content-sm-start mt-4">
-                                <Link to="/projects" className="btn btn-primary px-4 py-2">
+                                <Link to="/projects" className="btn btn-outline-theme px-4 py-2">
                                     View Projects
                                 </Link>
 
